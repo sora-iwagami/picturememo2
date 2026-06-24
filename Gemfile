@@ -1,8 +1,8 @@
-gem 'logger'
 ruby '3.2.9'
 source 'https://rubygems.org'
 
 gem 'activerecord', '~> 6.1'
+gem 'logger'
 gem 'bcrypt', '~> 3.1'
 gem 'dotenv', '~> 2.7'
 gem 'pg', '~> 1.2'
