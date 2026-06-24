@@ -1,3 +1,4 @@
+gem 'logger'
 ruby '3.2.9'
 source 'https://rubygems.org'
 

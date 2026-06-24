@@ -112,6 +112,7 @@ DEPENDENCIES
   cloudinary
   dotenv (~> 2.7)
   exifr
+  logger
   mini_exiftool
   pg (~> 1.2)
   rake (~> 13.0)
