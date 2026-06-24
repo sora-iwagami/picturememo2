@@ -1,11 +1,9 @@
-default_env: &default
+development:
   adapter: postgresql
   encoding: unicode
-
-development:
-  <<: *default
   database: s_original
 
 production:
-  <<: *default
+  adapter: postgresql
+  encoding: unicode
   url: <%= ENV['DATABASE_URL'] %>
