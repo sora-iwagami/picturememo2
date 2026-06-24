@@ -1,0 +1,26 @@
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+  <header class="header">
+  <h1><a href="/">Picture memo</a></h1>
+    <nav>
+      <ul>
+        <li><a href="/newmap">Map</a></li>
+      <% unless session[:user] %>
+       <li><a href="/signup">signup</a></li>
+       <li><a href="/signin">signin</a></li>
+      <% else %>
+        <li><a href="/profile">Profile</a></li>
+        <li><a href="/newpicture">Newpicture</a></li>
+        <li><a href="/setting">Setting</a></li>
+        <li><a href="/list">List</a></li>
+        <li><a href="/signout">signout</a></li>
+      <% end %>
+      </ul>
+    </nav>
+  </header>
+  <%= yield %>
+</body>
+</html>

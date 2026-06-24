@@ -1,0 +1,124 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    activemodel (6.1.7.10)
+      activesupport (= 6.1.7.10)
+    activerecord (6.1.7.10)
+      activemodel (= 6.1.7.10)
+      activesupport (= 6.1.7.10)
+    activesupport (6.1.7.10)
+      concurrent-ruby (~> 1.0, >= 1.0.2)
+      i18n (>= 1.6, < 2)
+      minitest (>= 5.1)
+      tzinfo (~> 2.0)
+      zeitwerk (~> 2.3)
+    addressable (2.9.0)
+      public_suffix (>= 2.0.2, < 8.0)
+    bcrypt (3.1.22)
+    carrierwave (3.1.3)
+      activemodel (>= 6.0.0)
+      activesupport (>= 6.0.0)
+      addressable (~> 2.6)
+      image_processing (~> 1.1)
+      marcel (~> 1.0.0)
+      ssrf_filter (~> 1.0)
+    cloudinary (2.4.5)
+      faraday (>= 2.0.1, < 3.0.0)
+      faraday-follow_redirects (~> 0.5)
+      faraday-multipart (~> 1.0, >= 1.0.4)
+      ostruct
+    concurrent-ruby (1.3.7)
+    dotenv (2.8.1)
+    drb (2.2.3)
+    exifr (1.5.1)
+    faraday (2.14.3)
+      faraday-net_http (>= 2.0, < 3.5)
+      json
+      logger
+    faraday-follow_redirects (0.5.0)
+      faraday (>= 1, < 3)
+    faraday-multipart (1.2.0)
+      multipart-post (~> 2.0)
+    faraday-net_http (3.4.4)
+      net-http (~> 0.5)
+    ffi (1.17.4-arm64-darwin)
+    i18n (1.15.2)
+      concurrent-ruby (~> 1.0)
+    image_processing (1.14.0)
+      mini_magick (>= 4.9.5, < 6)
+      ruby-vips (>= 2.0.17, < 3)
+    json (2.20.0)
+    logger (1.7.0)
+    marcel (1.0.4)
+    mini_exiftool (2.14.0)
+      ostruct (>= 0.6.0)
+      pstore (>= 0.1.3)
+    mini_magick (5.3.1)
+      logger
+    minitest (6.0.6)
+      drb (~> 2.0)
+      prism (~> 1.5)
+    multi_json (1.21.1)
+    multipart-post (2.4.1)
+    mustermann (2.0.2)
+      ruby2_keywords (~> 0.0.1)
+    net-http (0.9.1)
+      uri (>= 0.11.1)
+    ostruct (0.6.3)
+    pg (1.6.3-arm64-darwin)
+    prism (1.9.0)
+    pstore (0.2.1)
+    public_suffix (7.0.5)
+    rack (2.2.23)
+    rack-protection (2.2.4)
+      rack
+    rake (13.4.2)
+    ruby-vips (2.3.0)
+      ffi (~> 1.12)
+      logger
+    ruby2_keywords (0.0.5)
+    sinatra (2.2.4)
+      mustermann (~> 2.0)
+      rack (~> 2.2)
+      rack-protection (= 2.2.4)
+      tilt (~> 2.0)
+    sinatra-activerecord (2.0.28)
+      activerecord (>= 4.1)
+      sinatra (>= 1.0)
+    sinatra-contrib (2.2.4)
+      multi_json
+      mustermann (~> 2.0)
+      rack-protection (= 2.2.4)
+      sinatra (= 2.2.4)
+      tilt (~> 2.0)
+    ssrf_filter (1.5.0)
+    tilt (2.7.0)
+    tzinfo (2.0.6)
+      concurrent-ruby (~> 1.0)
+    uri (1.1.1)
+    webrick (1.9.2)
+    zeitwerk (2.8.2)
+
+PLATFORMS
+  arm64-darwin-25
+
+DEPENDENCIES
+  activerecord (~> 6.1)
+  bcrypt (~> 3.1)
+  carrierwave (~> 3.0)
+  cloudinary
+  dotenv (~> 2.7)
+  exifr
+  mini_exiftool
+  pg (~> 1.2)
+  rake (~> 13.0)
+  sinatra (~> 2.1)
+  sinatra-activerecord (~> 2.0)
+  sinatra-contrib (~> 2.1)
+  webrick (~> 1.7)
+
+RUBY VERSION
+   ruby 3.2.9p265
+
+BUNDLED WITH
+   2.4.19

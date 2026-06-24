@@ -1,0 +1,28 @@
+<link href="/assets/css/style.css" rel="stylesheet">
+<div class="title-name"><h2></h2></div>
+
+
+<h2 class="page-title">Map List</h2>
+
+<ul class="group-list">
+  <% @groups.each do |group| %>
+    <li>
+      <a href="/maps/<%= group.id %>">
+        <strong><%= group.name %></strong>
+        <% if group.is_share %>
+          <span class="tag shared">(共有中)</span>
+        <% else %>
+          <span class="tag not-shared">(非共有)</span>
+        <% end %>
+      </a>
+    </li>
+  <% end %>
+</ul>
+
+<form action="/newgroup" method="get" class="newgroup-form">
+  <input type="submit" value="newgroup" class="upload">
+</form>
+
+
+
+

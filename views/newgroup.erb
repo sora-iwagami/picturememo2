@@ -1,0 +1,22 @@
+<link href="/assets/css/style.css" rel="stylesheet">
+<h1 class="group-title">New Group</h1>
+<form action="/newgroup" method="post" enctype="multipart/form-data" class="new-group">
+  <input type="text" name="group_name" placeholder="Group name" class="group-name">
+
+  <select name="is_share" class="is-shere">
+    <option value="">Select Share</option>
+    <option value="true">共有する</option>
+    <option value="false">共有しない</option>
+  </select>
+
+  <!-- ユーザー選択 -->
+  <select name="user_ids[]" multiple class="list-name">
+    <% User.where.not(id: @current_user.id).each do |user| %>
+      <option value="<%= user.id %>"><%= user.mail %></option>
+    <% end %>
+  </select>
+
+  <input type="submit" value="Create" class="upload">
+</form>
+
+</div>

@@ -1,0 +1,286 @@
+#mapid { height: 800px; }
+
+body {
+    background-color: #F6F1E9;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.main {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  color:#8e4224;
+  padding-left:20px;
+}
+  
+nav ul {
+  display: flex;
+  list-style-type: none;
+}  
+
+nav ul li {
+  margin: 0 12px;
+  font-size: 24px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ff944d;
+}
+
+nav ul li a:hover {
+  color: #ff6600;
+}
+
+h1 {
+  color: #fed014;
+  font-size:40px;
+}
+
+h1 a {
+  text-decoration: none;
+  color: inherit; /* h1の文字色を引き継ぐ */
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 120px;
+}
+
+.new-picture {
+  background-color: #F6F1E9
+}
+
+.picture-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.picture-item {
+  display: flex;
+}
+
+.picture-img {
+    width: 50%;
+    padding: 16px;
+    margin: 16px;
+}
+
+.picture-text {
+  color: #8e4224;
+  font-size:15px;
+}
+
+.list-name {
+  color: #FED012;
+  font-size: 20px;
+}
+.place-name {
+  margin: 20px;
+  border: none;
+  background-color: #F6F1E9;
+  outline: none;
+  border-bottom: 2px solid #ADADAD;
+  font-size: 30px;
+}
+
+.category-id {
+  margin:20px;
+  background-color: #FF8400;
+  border: none;
+  font-size: 30px;
+}
+
+.file {
+  margin:20px;
+  border: 2px dashed #adadad;
+  font-size: 20px;
+}
+
+.upload {
+  margin:20px;
+  background-color: #ff8400;
+  border: none;
+  font-size: 30px;
+}
+
+.leaflet-popup-content,
+a.leaflet-popup-close-button {
+  color: #8D4223 !important;
+  font: bold 14pt monospace;
+}
+
+.leaflet-popup-content-wrapper {
+  width: 200px;
+  background-color: #F6F1E9;
+}
+
+.icon-red { /* icon-redは最初に指定したクラス名 */
+  filter: hue-rotate(150deg);
+}
+
+.icon-blue { /* icon-redは最初に指定したクラス名 */
+  filter: hue-rotate(0deg);
+}
+
+.icon-yellow { /* icon-redは最初に指定したクラス名 */
+  filter: hue-rotate(210deg);
+}
+
+.color_id {
+  margin: 20px;
+  background-color: #FF8400;
+  border: none;
+  font-size: 30px;
+}
+
+.group-id {
+  margin: 20px;
+  background-color: #FF8400;
+  border: none;
+  font-size: 30px;
+}
+
+
+.page-title {
+  font-size: 32px;
+  color: #8e4224;
+  margin: 20px 0;
+  padding-left: 20px;
+}
+
+.group-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px;
+}
+
+.group-list li {
+  background-color: #fff3e0;
+  margin-bottom: 12px;
+  padding: 16px 20px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+  font-size: 20px;
+}
+
+.group-list a {
+  text-decoration: none;
+  color: #8e4224;
+  display: block;
+}
+
+.group-list a:hover {
+  background-color: #ffe1b3;
+  border-radius: 8px;
+}
+
+.tag {
+  margin-left: 12px;
+  font-size: 16px;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.shared {
+  background-color: #d1e7dd;
+  color: #0f5132;
+}
+
+.not-shared {
+  background-color: #f8d7da;
+  color: #842029;
+}
+
+.new-group {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 120px;
+}
+
+.newgroup-form {
+  margin: 20px;
+}
+
+.group-name {
+  margin: 20px;
+  border: none;
+  background-color: #F6F1E9;
+  outline: none;
+  border-bottom: 2px solid #ADADAD;
+  font-size: 30px;
+}
+
+.is-shere {
+  color: #FF8302;
+  font-size: 20px;
+  text-align: center;
+  margin: 24px;
+}
+
+.list-name{
+  /*margin:20px;*/
+  /*border: none;*/
+  /*font-size: 30px;*/
+ color:   #FF8302;
+ text-align: center;
+}
+
+.title-name {
+ color: #FF8302;
+ font-size: 30px;
+ margin:24px;
+}
+
+.new-group {
+  max-width: 1200px; /* フォーム全体の最大幅を決める */
+  margin: 0 auto;   /* 親の中央に配置 */
+}
+
+.group-name,
+.is-shere,
+.list-name {
+  display: block;
+  width: 100%;          /* 親要素に合わせる */
+  box-sizing: border-box;
+  margin: 12px 0;       /* 上下余白だけ */
+  text-align: center;   /* テキストを中央寄せ */
+}
+
+.group-title {
+  color: #8D4223;
+  margin:24px;
+  font-size:30px;
+}
+
+.picture-text{
+  margin:24px;
+}
+
+
+
+.title-setting{
+ color:#8D4223;
+  font-size:24px;
+}
+.title-name{
+  color:#8D4223;
+  font-size: 24px;
+}
+
+.new-picture{
+  color:#8D4223;
+  font-size:24px;
+  margin:12px;
+}

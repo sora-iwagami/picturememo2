@@ -1,0 +1,26 @@
+<link href="/assets/css/style.css" rel="stylesheet">
+<div class="new-picture">
+<title>Newpicture</title>
+<div class="new-picture"><h2>newpicture</h2></div> 
+<!-- newpicture.erb（修正後） -->
+<form action="/newpicture" method="post" enctype="multipart/form-data" class="form-container">
+    <input type="text" name="place_name" placeholder="Place name" class="place-name">
+
+    <select name="category_id" class="category-id">
+        <option value="">select category</option>
+        <option value="1">vehicles</option>
+        <option value="2">landscape</option>
+        <option value="3">foods</option>
+    </select>
+
+    <!-- グループ選択 -->
+    <select name="group_id" class="group-id">
+        <option value="">グループを選択</option>
+        <% Group.all.each do |group| %>
+            <option value="<%= group.id %>"><%= group.name %></option>
+        <% end %>
+    </select>
+
+    <input type="file" name="photo" class="file">
+    <input type="submit" value="Upload" class="upload">
+</form>

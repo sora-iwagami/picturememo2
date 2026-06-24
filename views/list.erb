@@ -1,0 +1,13 @@
+<link href="/assets/css/style.css" rel="stylesheet">
+<div class="title-name"><h2>List</h2></div> 
+<div class="picture-list">
+<% @places.each do |place| %>
+    <div class="picture-item">
+        <div class="picture-text">
+            <h2><%= place.place_name %></h2>
+            <p><%= place.created_at %></p>
+        </div>
+        <img class="picture-img" src="<%= place.photo %>" alt="風景写真">
+     </div>
+<% end %>
+</div>

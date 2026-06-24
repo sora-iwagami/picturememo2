@@ -1,0 +1,14 @@
+<link href="/assets/css/style.css" rel="stylesheet">
+<div class="new-picture">
+    <div class="title-setting"><h2>setting</h2></div> 
+    <p><%= @current_user.mail %></p>
+    <form action = "/color_id" method="post" class="form-container">
+    <select name="color" class="category-id">
+        <option value="">select color</option>
+        <option value="1">blue</option>
+        <option value="2">red</option>
+        <option value="3">yellow</option>
+    </select>
+    <input type="submit" value="設定"class="upload">
+    </form>
+</div>
